@@ -27,4 +27,4 @@
 
 ### Deployed Web App
 
-![chatbot2](chatbot2.png)
+![chatbot3](chatbot3.png)
