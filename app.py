@@ -17,11 +17,11 @@ for message in st.session_state.messages:
         st.markdown(message["content"])
 
 if prompt := st.chat_input("What's Up?"):
-    with st.chat_message("user"):
+    with st.chat_message("user", avatar="👩‍🎤"):
         st.markdown(prompt)
     st.session_state.messages.append({"role": "user", "content": prompt})
 
-    with st.chat_message("assistant"):
+    with st.chat_message("assistant", avatar="🤖"):
         message_placeholder = st.empty()
         full_response = ""
         for response in openai.chat.completions.create(
